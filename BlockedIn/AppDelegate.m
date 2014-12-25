@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IntroViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    IntroViewController *initialViewController = [[IntroViewController alloc] init];
+    self.window.rootViewController = initialViewController;
+    
     return YES;
 }
 
